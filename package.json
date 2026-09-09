@@ -1,0 +1,32 @@
+{
+  "name": "qaqh-js-sdk",
+  "version": "0.1.0",
+  "description": "Ringing V1 TypeScript SDK for QAQ-Harness daemon — shell-agnostic (Electron / Tauri webview / browser webUI)",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "prepare": "tsc -p tsconfig.json",
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.0"
+  }
+}
