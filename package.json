@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Ringing V1 TypeScript SDK for QAQ-Harness daemon — shell-agnostic (Electron / Tauri webview / browser webUI)",
   "type": "module",
-  "license": "MIT",
+  "license": "MIT OR Apache-2.0",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
