@@ -2,7 +2,9 @@
 
 QAQ-Harness Ringing V1 协议的 TypeScript SDK。壳无关：Electron / Tauri webview / 浏览器 webUI 共用同一实现。
 
-**规则真源**：`QAQ-Harness/docs/frontend-contract.md`（冻结契约）与 `docs/webui-development-standard.md`（MUST/NEVER 清单）。类型单一来源是 `src/protocol/bindings/`（ts-rs 从 `qaqh-domain` / `qaqh-ringing` / `qaqh-types` 生成，勿手改）。
+**类型单一来源**：`src/protocol/bindings/`（ts-rs 从 `qaqh-backend` 的 `qaqh-domain` / `qaqh-ringing` / `qaqh-types` 生成，勿手改）。跨仓索引与各版本锁定的 commit 见 [QAQ-Harness](https://github.com/QAQTam/QAQ-Harness)。
+
+> 本行此前写的是「规则真源：`QAQ-Harness/docs/frontend-contract.md`（冻结契约）与 `docs/webui-development-standard.md`（MUST/NEVER 清单）」——那两份文档在本仓库里都不存在（`docs/` 为空），而 `QAQ-Harness` 现在指的是**门面 / 索引仓**（后端 monorepo 已更名 `qaqh-backend`）。规范的现行真源只有后端 crate 本身的类型与注释。
 
 ## 安装
 
